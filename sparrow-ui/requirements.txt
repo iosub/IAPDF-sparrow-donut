@@ -6,3 +6,5 @@ streamlit-javascript==0.1.5
 natsort
 streamlit-aggrid==0.3.3
 pandas<2.0
+tomlkit==0.12.0
+typer==0.12.3
