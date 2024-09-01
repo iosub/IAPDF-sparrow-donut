@@ -2,6 +2,7 @@ from pydantic import BaseSettings
 
 
 class Settings(BaseSettings):
+    #AQUI EL KEY
     huggingface_key: str = ""
     sparrow_key: str = ""
     processor: str = "katanaml-org/invoices-donut-model-v1"
