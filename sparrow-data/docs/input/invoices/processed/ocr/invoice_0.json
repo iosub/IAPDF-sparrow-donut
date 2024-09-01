@@ -125,7 +125,7 @@
                                 },
                                 {
                                     "value": "issue:",
-                                    "confidence": 0.9772670269012451,
+                                    "confidence": 0.977266788482666,
                                     "geometry": [
                                         [
                                             0.1533203125,
@@ -168,7 +168,7 @@
                             "words": [
                                 {
                                     "value": "10/15/2012",
-                                    "confidence": 0.9941052198410034,
+                                    "confidence": 0.9941051006317139,
                                     "geometry": [
                                         [
                                             0.4853515625,
@@ -211,7 +211,7 @@
                             "words": [
                                 {
                                     "value": "Seller:",
-                                    "confidence": 0.9909752011299133,
+                                    "confidence": 0.9909753203392029,
                                     "geometry": [
                                         [
                                             0.080078125,
@@ -309,7 +309,7 @@
                             "words": [
                                 {
                                     "value": "356",
-                                    "confidence": 0.9956440925598145,
+                                    "confidence": 0.995644211769104,
                                     "geometry": [
                                         [
                                             0.083984375,
@@ -365,7 +365,7 @@
                             "words": [
                                 {
                                     "value": "New",
-                                    "confidence": 0.959143877029419,
+                                    "confidence": 0.9591501355171204,
                                     "geometry": [
                                         [
                                             0.083984375,
@@ -633,7 +633,7 @@
                                 },
                                 {
                                     "value": "Odonnell",
-                                    "confidence": 0.9923869371414185,
+                                    "confidence": 0.992387056350708,
                                     "geometry": [
                                         [
                                             0.5791015625,
@@ -773,7 +773,7 @@
                             "words": [
                                 {
                                     "value": "Jenniferville,",
-                                    "confidence": 0.8433296084403992,
+                                    "confidence": 0.8433306217193604,
                                     "geometry": [
                                         [
                                             0.5029296875,
@@ -843,7 +843,7 @@
                                 },
                                 {
                                     "value": "Id:",
-                                    "confidence": 0.9090571999549866,
+                                    "confidence": 0.9090288281440735,
                                     "geometry": [
                                         [
                                             0.5380859375,
@@ -914,7 +914,7 @@
                                 },
                                 {
                                     "value": "GB77WRBQ31965128414006",
-                                    "confidence": 0.7621486186981201,
+                                    "confidence": 0.7621466517448425,
                                     "geometry": [
                                         [
                                             0.13671875,
@@ -957,7 +957,7 @@
                             "words": [
                                 {
                                     "value": "Qty",
-                                    "confidence": 0.9942929744720459,
+                                    "confidence": 0.9942930936813354,
                                     "geometry": [
                                         [
                                             0.4091796875,
@@ -1550,7 +1550,7 @@
                             "words": [
                                 {
                                     "value": "7,50",
-                                    "confidence": 0.9990445971488953,
+                                    "confidence": 0.9990444779396057,
                                     "geometry": [
                                         [
                                             0.6845703125,
@@ -1636,7 +1636,7 @@
                             "words": [
                                 {
                                     "value": "SUMMARY",
-                                    "confidence": 0.9961697459220886,
+                                    "confidence": 0.9961695075035095,
                                     "geometry": [
                                         [
                                             0.080078125,
@@ -1693,7 +1693,7 @@
                                 },
                                 {
                                     "value": "[%]",
-                                    "confidence": 0.9649435877799988,
+                                    "confidence": 0.9649431705474854,
                                     "geometry": [
                                         [
                                             0.421875,
@@ -1721,7 +1721,7 @@
                             "words": [
                                 {
                                     "value": "10%",
-                                    "confidence": 0.8173165917396545,
+                                    "confidence": 0.8173168897628784,
                                     "geometry": [
                                         [
                                             0.4033203125,
@@ -1834,7 +1834,7 @@
                             "words": [
                                 {
                                     "value": "$7,50",
-                                    "confidence": 0.5588219165802002,
+                                    "confidence": 0.5588200688362122,
                                     "geometry": [
                                         [
                                             0.5869140625,
@@ -2089,7 +2089,7 @@
                             "words": [
                                 {
                                     "value": "Total",
-                                    "confidence": 0.9819314479827881,
+                                    "confidence": 0.9819316864013672,
                                     "geometry": [
                                         [
                                             0.3017578125,

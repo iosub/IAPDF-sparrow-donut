@@ -125,7 +125,7 @@
                                 },
                                 {
                                     "value": "issue:",
-                                    "confidence": 0.9772670269012451,
+                                    "confidence": 0.977266788482666,
                                     "geometry": [
                                         [
                                             0.1533203125,
@@ -168,7 +168,7 @@
                             "words": [
                                 {
                                     "value": "05/16/2018",
-                                    "confidence": 0.8260298371315002,
+                                    "confidence": 0.8260347247123718,
                                     "geometry": [
                                         [
                                             0.4853515625,
@@ -211,7 +211,7 @@
                             "words": [
                                 {
                                     "value": "Seller:",
-                                    "confidence": 0.9909752011299133,
+                                    "confidence": 0.9909753203392029,
                                     "geometry": [
                                         [
                                             0.080078125,
@@ -239,7 +239,7 @@
                             "words": [
                                 {
                                     "value": "Wilson",
-                                    "confidence": 0.9698096513748169,
+                                    "confidence": 0.9698097705841064,
                                     "geometry": [
                                         [
                                             0.0849609375,
@@ -365,7 +365,7 @@
                             "words": [
                                 {
                                     "value": "Lanemouth,",
-                                    "confidence": 0.8661589026451111,
+                                    "confidence": 0.8661690354347229,
                                     "geometry": [
                                         [
                                             0.0849609375,
@@ -491,7 +491,7 @@
                                 },
                                 {
                                     "value": "GB93QVUL88882887593544",
-                                    "confidence": 0.9698004722595215,
+                                    "confidence": 0.9698003530502319,
                                     "geometry": [
                                         [
                                             0.13671875,
@@ -632,7 +632,7 @@
                             "words": [
                                 {
                                     "value": "Burke-Nelson",
-                                    "confidence": 0.9659907817840576,
+                                    "confidence": 0.9659904837608337,
                                     "geometry": [
                                         [
                                             0.50390625,
@@ -688,7 +688,7 @@
                                 },
                                 {
                                     "value": "Pass",
-                                    "confidence": 0.9838297963142395,
+                                    "confidence": 0.9838302731513977,
                                     "geometry": [
                                         [
                                             0.62109375,
@@ -814,7 +814,7 @@
                                 },
                                 {
                                     "value": "Id:",
-                                    "confidence": 0.9090573191642761,
+                                    "confidence": 0.9090288281440735,
                                     "geometry": [
                                         [
                                             0.5380859375,
@@ -871,7 +871,7 @@
                             "words": [
                                 {
                                     "value": "Qty",
-                                    "confidence": 0.9752962589263916,
+                                    "confidence": 0.9752957224845886,
                                     "geometry": [
                                         [
                                             0.4091796875,
@@ -1349,7 +1349,7 @@
                             "words": [
                                 {
                                     "value": "1320,00",
-                                    "confidence": 0.6450285911560059,
+                                    "confidence": 0.6450216174125671,
                                     "geometry": [
                                         [
                                             0.8447265625,
@@ -1405,7 +1405,7 @@
                             "words": [
                                 {
                                     "value": "120,99",
-                                    "confidence": 0.973676323890686,
+                                    "confidence": 0.973675549030304,
                                     "geometry": [
                                         [
                                             0.859375,
@@ -1560,7 +1560,7 @@
                                 },
                                 {
                                     "value": "PlayStation",
-                                    "confidence": 0.8622103333473206,
+                                    "confidence": 0.8622110486030579,
                                     "geometry": [
                                         [
                                             0.181640625,
@@ -1574,7 +1574,7 @@
                                 },
                                 {
                                     "value": "5",
-                                    "confidence": 0.648445188999176,
+                                    "confidence": 0.6484416723251343,
                                     "geometry": [
                                         [
                                             0.259765625,
@@ -1742,7 +1742,7 @@
                                 },
                                 {
                                     "value": "Confirm",
-                                    "confidence": 0.8383879661560059,
+                                    "confidence": 0.8383869528770447,
                                     "geometry": [
                                         [
                                             0.234375,
@@ -1798,7 +1798,7 @@
                                 },
                                 {
                                     "value": "Bittboy",
-                                    "confidence": 0.6564268469810486,
+                                    "confidence": 0.6564221382141113,
                                     "geometry": [
                                         [
                                             0.212890625,
@@ -1826,7 +1826,7 @@
                                 },
                                 {
                                     "value": "White",
-                                    "confidence": 0.9526883959770203,
+                                    "confidence": 0.9526889324188232,
                                     "geometry": [
                                         [
                                             0.2841796875,
@@ -1854,7 +1854,7 @@
                             "words": [
                                 {
                                     "value": "Retro",
-                                    "confidence": 0.9903224110603333,
+                                    "confidence": 0.9903225302696228,
                                     "geometry": [
                                         [
                                             0.14453125,
@@ -1882,7 +1882,7 @@
                                 },
                                 {
                                     "value": "Game",
-                                    "confidence": 0.9764935374259949,
+                                    "confidence": 0.976493775844574,
                                     "geometry": [
                                         [
                                             0.2275390625,
@@ -1896,7 +1896,7 @@
                                 },
                                 {
                                     "value": "Portable",
-                                    "confidence": 0.7389548420906067,
+                                    "confidence": 0.73895263671875,
                                     "geometry": [
                                         [
                                             0.271484375,
@@ -2022,7 +2022,7 @@
                                 },
                                 {
                                     "value": "PlayStation",
-                                    "confidence": 0.9133965969085693,
+                                    "confidence": 0.9133967161178589,
                                     "geometry": [
                                         [
                                             0.181640625,
@@ -2134,7 +2134,7 @@
                                 },
                                 {
                                     "value": "(Used)",
-                                    "confidence": 0.5097187757492065,
+                                    "confidence": 0.5097211599349976,
                                     "geometry": [
                                         [
                                             0.3056640625,
@@ -2260,7 +2260,7 @@
                                 },
                                 {
                                     "value": "ONLY",
-                                    "confidence": 0.9934264421463013,
+                                    "confidence": 0.9934265613555908,
                                     "geometry": [
                                         [
                                             0.212890625,
@@ -2302,7 +2302,7 @@
                             "words": [
                                 {
                                     "value": "Accessories",
-                                    "confidence": 0.9904546141624451,
+                                    "confidence": 0.9904544949531555,
                                     "geometry": [
                                         [
                                             0.1435546875,
@@ -2400,7 +2400,7 @@
                                 },
                                 {
                                     "value": "PlayStation",
-                                    "confidence": 0.9649456143379211,
+                                    "confidence": 0.9649458527565002,
                                     "geometry": [
                                         [
                                             0.166015625,
@@ -2470,7 +2470,7 @@
                             "words": [
                                 {
                                     "value": "PCH-1100AB01",
-                                    "confidence": 0.8621132969856262,
+                                    "confidence": 0.8621131181716919,
                                     "geometry": [
                                         [
                                             0.1435546875,
@@ -2484,7 +2484,7 @@
                                 },
                                 {
                                     "value": "PCH-1100",
-                                    "confidence": 0.8983298540115356,
+                                    "confidence": 0.8983285427093506,
                                     "geometry": [
                                         [
                                             0.2509765625,
@@ -2554,7 +2554,7 @@
                                 },
                                 {
                                     "value": "271214",
-                                    "confidence": 0.9768471121788025,
+                                    "confidence": 0.9768468737602234,
                                     "geometry": [
                                         [
                                             0.2685546875,
@@ -2680,7 +2680,7 @@
                                 },
                                 {
                                     "value": "Black",
-                                    "confidence": 0.9633457660675049,
+                                    "confidence": 0.9633497595787048,
                                     "geometry": [
                                         [
                                             0.2080078125,
@@ -2694,7 +2694,7 @@
                                 },
                                 {
                                     "value": "Console",
-                                    "confidence": 0.513978123664856,
+                                    "confidence": 0.5140033960342407,
                                     "geometry": [
                                         [
                                             0.248046875,
@@ -2708,7 +2708,7 @@
                                 },
                                 {
                                     "value": "(Used)",
-                                    "confidence": 0.5939647555351257,
+                                    "confidence": 0.5939473509788513,
                                     "geometry": [
                                         [
                                             0.306640625,
@@ -2962,7 +2962,7 @@
                             "words": [
                                 {
                                     "value": "117,00",
-                                    "confidence": 0.856245756149292,
+                                    "confidence": 0.8562523722648621,
                                     "geometry": [
                                         [
                                             0.6689453125,
@@ -3046,7 +3046,7 @@
                             "words": [
                                 {
                                     "value": "574,90",
-                                    "confidence": 0.967887818813324,
+                                    "confidence": 0.9678879976272583,
                                     "geometry": [
                                         [
                                             0.66796875,
@@ -3300,7 +3300,7 @@
                             "words": [
                                 {
                                     "value": "SUMMARY",
-                                    "confidence": 0.8337228894233704,
+                                    "confidence": 0.833713948726654,
                                     "geometry": [
                                         [
                                             0.080078125,
@@ -3385,7 +3385,7 @@
                             "words": [
                                 {
                                     "value": "10%",
-                                    "confidence": 0.9997205138206482,
+                                    "confidence": 0.9997203946113586,
                                     "geometry": [
                                         [
                                             0.4033203125,
@@ -3470,7 +3470,7 @@
                             "words": [
                                 {
                                     "value": "2816,88",
-                                    "confidence": 0.9348204135894775,
+                                    "confidence": 0.934820294380188,
                                     "geometry": [
                                         [
                                             0.5732421875,
@@ -3498,7 +3498,7 @@
                             "words": [
                                 {
                                     "value": "$2816,88",
-                                    "confidence": 0.8068839311599731,
+                                    "confidence": 0.8068845272064209,
                                     "geometry": [
                                         [
                                             0.5556640625,
@@ -3781,7 +3781,7 @@
                             "words": [
                                 {
                                     "value": "Total",
-                                    "confidence": 0.9611087441444397,
+                                    "confidence": 0.9611089825630188,
                                     "geometry": [
                                         [
                                             0.3017578125,

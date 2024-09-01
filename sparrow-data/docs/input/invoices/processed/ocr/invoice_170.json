@@ -125,7 +125,7 @@
                                 },
                                 {
                                     "value": "issue:",
-                                    "confidence": 0.9772670269012451,
+                                    "confidence": 0.977266788482666,
                                     "geometry": [
                                         [
                                             0.1533203125,
@@ -168,7 +168,7 @@
                             "words": [
                                 {
                                     "value": "04/02/2013",
-                                    "confidence": 0.8053697943687439,
+                                    "confidence": 0.8053704500198364,
                                     "geometry": [
                                         [
                                             0.4853515625,
@@ -239,7 +239,7 @@
                             "words": [
                                 {
                                     "value": "Thomas-Mitchel",
-                                    "confidence": 0.7294047474861145,
+                                    "confidence": 0.7294024229049683,
                                     "geometry": [
                                         [
                                             0.0830078125,
@@ -281,7 +281,7 @@
                                 },
                                 {
                                     "value": "Castillo",
-                                    "confidence": 0.7194358110427856,
+                                    "confidence": 0.719435453414917,
                                     "geometry": [
                                         [
                                             0.142578125,
@@ -351,7 +351,7 @@
                             "words": [
                                 {
                                     "value": "Stephensborough,",
-                                    "confidence": 0.9787898659706116,
+                                    "confidence": 0.9787904620170593,
                                     "geometry": [
                                         [
                                             0.0859375,
@@ -477,7 +477,7 @@
                                 },
                                 {
                                     "value": "GB87WTNX68187420702306",
-                                    "confidence": 0.3536873459815979,
+                                    "confidence": 0.3536856770515442,
                                     "geometry": [
                                         [
                                             0.1376953125,
@@ -618,7 +618,7 @@
                             "words": [
                                 {
                                     "value": "Roberts-Wolfe",
-                                    "confidence": 0.6319706439971924,
+                                    "confidence": 0.6319724917411804,
                                     "geometry": [
                                         [
                                             0.50390625,
@@ -674,7 +674,7 @@
                                 },
                                 {
                                     "value": "Point",
-                                    "confidence": 0.9785844683647156,
+                                    "confidence": 0.978584349155426,
                                     "geometry": [
                                         [
                                             0.6103515625,
@@ -688,7 +688,7 @@
                                 },
                                 {
                                     "value": "Apt.",
-                                    "confidence": 0.9998010993003845,
+                                    "confidence": 0.999800980091095,
                                     "geometry": [
                                         [
                                             0.658203125,
@@ -730,7 +730,7 @@
                             "words": [
                                 {
                                     "value": "West",
-                                    "confidence": 0.7432335615158081,
+                                    "confidence": 0.743232786655426,
                                     "geometry": [
                                         [
                                             0.5029296875,
@@ -758,7 +758,7 @@
                                 },
                                 {
                                     "value": "SC",
-                                    "confidence": 0.9849415421485901,
+                                    "confidence": 0.9849414229393005,
                                     "geometry": [
                                         [
                                             0.6025390625,
@@ -772,7 +772,7 @@
                                 },
                                 {
                                     "value": "35533",
-                                    "confidence": 0.999691367149353,
+                                    "confidence": 0.9996914863586426,
                                     "geometry": [
                                         [
                                             0.6318359375,
@@ -814,7 +814,7 @@
                                 },
                                 {
                                     "value": "Id:",
-                                    "confidence": 0.9090571999549866,
+                                    "confidence": 0.9090288281440735,
                                     "geometry": [
                                         [
                                             0.5380859375,
@@ -871,7 +871,7 @@
                             "words": [
                                 {
                                     "value": "Qty",
-                                    "confidence": 0.975296139717102,
+                                    "confidence": 0.9752957224845886,
                                     "geometry": [
                                         [
                                             0.4091796875,
@@ -955,7 +955,7 @@
                             "words": [
                                 {
                                     "value": "4,00",
-                                    "confidence": 0.7719978094100952,
+                                    "confidence": 0.7720186710357666,
                                     "geometry": [
                                         [
                                             0.40625,
@@ -1166,7 +1166,7 @@
                                 },
                                 {
                                     "value": "[%]",
-                                    "confidence": 0.9974507689476013,
+                                    "confidence": 0.9974506497383118,
                                     "geometry": [
                                         [
                                             0.7763671875,
@@ -1462,7 +1462,7 @@
                                 },
                                 {
                                     "value": "midi",
-                                    "confidence": 0.9920299053192139,
+                                    "confidence": 0.9920300245285034,
                                     "geometry": [
                                         [
                                             0.2998046875,
@@ -1630,7 +1630,7 @@
                                 },
                                 {
                                     "value": "Sleeveless",
-                                    "confidence": 0.9942217469215393,
+                                    "confidence": 0.9942218661308289,
                                     "geometry": [
                                         [
                                             0.271484375,
@@ -1672,7 +1672,7 @@
                                 },
                                 {
                                     "value": "Ruffle",
-                                    "confidence": 0.9644156694412231,
+                                    "confidence": 0.9644155502319336,
                                     "geometry": [
                                         [
                                             0.19140625,
@@ -1700,7 +1700,7 @@
                                 },
                                 {
                                     "value": "Dress",
-                                    "confidence": 0.5605751276016235,
+                                    "confidence": 0.5605332851409912,
                                     "geometry": [
                                         [
                                             0.28125,
@@ -1714,7 +1714,7 @@
                                 },
                                 {
                                     "value": "Sz",
-                                    "confidence": 0.9886146783828735,
+                                    "confidence": 0.988614559173584,
                                     "geometry": [
                                         [
                                             0.3232421875,
@@ -1868,7 +1868,7 @@
                                 },
                                 {
                                     "value": "Swing",
-                                    "confidence": 0.9898015856742859,
+                                    "confidence": 0.9898017048835754,
                                     "geometry": [
                                         [
                                             0.234375,
@@ -1910,7 +1910,7 @@
                                 },
                                 {
                                     "value": "S",
-                                    "confidence": 0.7682346701622009,
+                                    "confidence": 0.7682345509529114,
                                     "geometry": [
                                         [
                                             0.3525390625,
@@ -1980,7 +1980,7 @@
                                 },
                                 {
                                     "value": "Rockabilly",
-                                    "confidence": 0.9729992747306824,
+                                    "confidence": 0.9729990363121033,
                                     "geometry": [
                                         [
                                             0.240234375,
@@ -1994,7 +1994,7 @@
                                 },
                                 {
                                     "value": "Black",
-                                    "confidence": 0.9985656142234802,
+                                    "confidence": 0.9985654950141907,
                                     "geometry": [
                                         [
                                             0.3115234375,
@@ -2022,7 +2022,7 @@
                             "words": [
                                 {
                                     "value": "Summer",
-                                    "confidence": 0.8364768624305725,
+                                    "confidence": 0.8364754915237427,
                                     "geometry": [
                                         [
                                             0.14453125,
@@ -2417,7 +2417,7 @@
                             "words": [
                                 {
                                     "value": "10%",
-                                    "confidence": 0.9991768002510071,
+                                    "confidence": 0.9991766810417175,
                                     "geometry": [
                                         [
                                             0.7724609375,
@@ -2445,7 +2445,7 @@
                             "words": [
                                 {
                                     "value": "10%",
-                                    "confidence": 0.9984846711158752,
+                                    "confidence": 0.9984845519065857,
                                     "geometry": [
                                         [
                                             0.7724609375,
@@ -2700,7 +2700,7 @@
                                 },
                                 {
                                     "value": "159,36",
-                                    "confidence": 0.6054186820983887,
+                                    "confidence": 0.6054505705833435,
                                     "geometry": [
                                         [
                                             0.5849609375,
@@ -2799,7 +2799,7 @@
                             "words": [
                                 {
                                     "value": "$",
-                                    "confidence": 0.8928154110908508,
+                                    "confidence": 0.8928110599517822,
                                     "geometry": [
                                         [
                                             0.69140625,
@@ -2856,7 +2856,7 @@
                             "words": [
                                 {
                                     "value": "Gross",
-                                    "confidence": 0.8280156850814819,
+                                    "confidence": 0.8280143141746521,
                                     "geometry": [
                                         [
                                             0.81640625,
@@ -2983,7 +2983,7 @@
                             "words": [
                                 {
                                     "value": "Total",
-                                    "confidence": 0.5069360733032227,
+                                    "confidence": 0.5069551467895508,
                                     "geometry": [
                                         [
                                             0.3017578125,

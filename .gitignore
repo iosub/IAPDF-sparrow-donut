@@ -161,3 +161,4 @@ cython_debug/
 .DS_Store
 
 sparrow-ui/.env_sparrow_ui/
+sparrow-data/docs/input/invoices/processed/ocr/invoice_295.json

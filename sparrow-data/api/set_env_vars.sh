@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set environment variables
-export HUGGINGFACE_KEY=""
+export HUGGINGFACE_KEY=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
 export SPARROW_KEY=""
 export SECURE_KEY=""
 export MONGODB_URL=""
