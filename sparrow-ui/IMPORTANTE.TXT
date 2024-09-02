@@ -1,0 +1,17 @@
+PS C:\Ia\iosub\APDF-sparrow-donut\sparrow-data\api> uvicorn endpoints:app --host 127.0.0.1 --port 8005 --reload
+PS C:\Ia\iosub\APDF-sparrow-donut\sparrow-ml\api> uvicorn endpoints:app --host 127.0.0.1 --port 8006 --reload
+==============================
+
+
+data
+ pip install bson  
+  pip install pymongo
+   pip install motor 
+
+ml
+ pip install -r .\requirements-fastapi.txt   
+
+ui 
+pip install -r .\requirements.txt                        
+pip install --upgrade numpy pandas                            
+pip install --upgrade streamlit-aggrid                               
