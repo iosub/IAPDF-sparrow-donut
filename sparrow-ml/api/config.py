@@ -3,8 +3,8 @@ from pydantic import BaseSettings
 
 class Settings(BaseSettings):
     #AQUI EL KEY
-    huggingface_key: str = ""
-    sparrow_key: str = ""
+    huggingface_key: str = "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"
+    sparrow_key: str = "io"
     processor: str = "katanaml-org/invoices-donut-model-v1"
     model: str = "katanaml-org/invoices-donut-model-v1"
     dataset: str = "katanaml-org/invoices-donut-data-v1"

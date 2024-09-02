@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "version": "v1.0",
+    "split": "train",
+    "image_id": 1004,
+    "image_size": {
+      "width": 976,
+      "height": 843
+    }
+  },
+  "words": [
+    {
+      "rect": {
+        "x1": 89,
+        "y1": 221,
+        "x2": 321,
+        "y2": 242
+      },
+      "value": "",
+      "label": "client"
+    },
+    {
+      "rect": {
+        "x1": 731,
+        "y1": 256,
+        "x2": 797,
+        "y2": 270
+      },
+      "value": "",
+      "label": "invoice_no"
+    }
+  ]
+}

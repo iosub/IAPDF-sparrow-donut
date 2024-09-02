@@ -1,5 +1,5 @@
 class Settings():
-    sparrow_key = ""
+    sparrow_key = "io"
 
 
 settings = Settings()
