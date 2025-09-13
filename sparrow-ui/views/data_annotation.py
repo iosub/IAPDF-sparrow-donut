@@ -256,7 +256,7 @@ class DataAnnotation:
                                 json.dump(result_rects.rects_data, f, indent=2)
                             st.session_state[model.rects_file] = result_rects.rects_data
                             # st.write(model.saved_text)
-                            st.experimental_rerun()
+                            st.rerun()
 
                 if len(result_rects.rects_data['words']) == 0:
                     st.caption(model.no_annotation_mapping)

@@ -199,7 +199,7 @@ class DataInference:
                     print('Response:', response.text)
 
                     st.session_state["inference_error"] = "Error extracting data from document"
-                    st.experimental_rerun()
+                    st.rerun()
 
                 model.set_data_result(response.text)
 

@@ -36,21 +36,21 @@ class Dashboard:
 
         # Use mock data when APIs are not available
         json_data_inference = [
-            ["2023-01-01", {"accuracy": 0.85, "processing_time": 2.3}, "model_v1", "inference_001", "2023-01-01 10:30:00"],
-            ["2023-01-02", {"accuracy": 0.87, "processing_time": 2.1}, "model_v1", "inference_002", "2023-01-02 11:15:00"],
-            ["2023-01-03", {"accuracy": 0.89, "processing_time": 1.9}, "model_v2", "inference_003", "2023-01-03 09:45:00"]
+            [2.3, {"accuracy": 0.85, "processing_time": 2.3}, "model_v1", "inference_001", "2023-01-01 10:30:00"],
+            [2.1, {"accuracy": 0.87, "processing_time": 2.1}, "model_v1", "inference_002", "2023-01-02 11:15:00"],
+            [1.9, {"accuracy": 0.89, "processing_time": 1.9}, "model_v2", "inference_003", "2023-01-03 09:45:00"]
         ]
         
         json_data_training = [
-            ["2023-01-01", {"loss": 0.45, "epochs": 10}, "model_v1", "training_001", "2023-01-01 14:20:00"],
-            ["2023-01-02", {"loss": 0.42, "epochs": 12}, "model_v1", "training_002", "2023-01-02 15:30:00"],
-            ["2023-01-03", {"loss": 0.38, "epochs": 15}, "model_v2", "training_003", "2023-01-03 16:10:00"]
+            [45, {"loss": 0.45, "epochs": 10}, "model_v1", "training_001", "2023-01-01 14:20:00"],
+            [42, {"loss": 0.42, "epochs": 12}, "model_v1", "training_002", "2023-01-02 15:30:00"],
+            [38, {"loss": 0.38, "epochs": 15}, "model_v2", "training_003", "2023-01-03 16:10:00"]
         ]
         
         json_data_evaluate = [
-            ["2023-01-01", {"mean_accuracy": 0.85}, "model_v1", "evaluate_001", "2023-01-01 12:00:00"],
-            ["2023-01-02", {"mean_accuracy": 0.87}, "model_v1", "evaluate_002", "2023-01-02 13:15:00"],
-            ["2023-01-03", {"mean_accuracy": 0.89}, "model_v2", "evaluate_003", "2023-01-03 14:30:00"]
+            [85, {"mean_accuracy": 0.85, "accuracies": 0.85}, "model_v1", "evaluate_001", "2023-01-01 12:00:00"],
+            [87, {"mean_accuracy": 0.87, "accuracies": 0.87}, "model_v1", "evaluate_002", "2023-01-02 13:15:00"],
+            [89, {"mean_accuracy": 0.89, "accuracies": 0.89}, "model_v2", "evaluate_003", "2023-01-03 14:30:00"]
         ]
 
         with st.container():
@@ -262,9 +262,9 @@ class Dashboard:
                 for i in range(0, len(json_data_evaluate)):
                     if json_data_evaluate[i][3] not in models_unique:
                         models_unique.append(json_data_evaluate[i][3])
-                        models_dict[json_data_evaluate[i][3]] = json_data_evaluate[i][1]['accuracies']
+                        models_dict[json_data_evaluate[i][3]] = [json_data_evaluate[i][1]['accuracies']]
 
-                data = pd.DataFrame(models_dict)
+                data = pd.DataFrame(models_dict, index=[0])
                 st.line_chart(data)
 
         st.markdown("---")
@@ -293,13 +293,16 @@ class Dashboard:
                     st.write(model.titleDatasetInfo)
 
                     # Use mock data when API is not available
-                    response = type('MockResponse', (), {'status_code': 200, 'json': lambda: {
-                        "splits": [
-                            {"name": "dataset_1", "size": 1500, "type": "training"},
-                            {"name": "dataset_2", "size": 800, "type": "validation"},
-                            {"name": "dataset_3", "size": 300, "type": "test"}
-                        ]
-                    }})()
+                    response = type('MockResponse', (), {
+                        'status_code': 200, 
+                        'json': lambda self: {
+                            "splits": [
+                                {"name": "dataset_1", "size": 1500, "type": "training", "number_of_rows": 1500},
+                                {"name": "dataset_2", "size": 800, "type": "validation", "number_of_rows": 800},
+                                {"name": "dataset_3", "size": 300, "type": "test", "number_of_rows": 300}
+                            ]
+                        }
+                    })()
 
                     # Check if the request was successful (status code 200)
                     names = []
