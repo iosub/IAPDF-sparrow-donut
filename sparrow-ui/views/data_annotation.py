@@ -1,6 +1,5 @@
 import streamlit as st
 from PIL import Image
-import streamlit_nested_layout
 from streamlit_sparrow_labeling import st_sparrow_labeling
 from streamlit_sparrow_labeling import DataProcessor
 import json

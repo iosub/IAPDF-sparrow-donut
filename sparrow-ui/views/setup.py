@@ -71,9 +71,15 @@ class Setup:
                 if st.session_state['action'] != 'delete' and st.session_state['action'] != 'create':
                     rows = st.session_state['selected_rows']
                     if len(rows) > 0:
-                        idx = rows[0]['_selectedRowNodeInfo']['nodeRowIndex']
-                        self.df.drop(self.df.index[idx], inplace=True)
-                        self.df.reset_index(drop=True, inplace=True)
+                        if '_selectedRowNodeInfo' in rows[0] and 'nodeRowIndex' in rows[0]['_selectedRowNodeInfo']:
+                            idx = rows[0]['_selectedRowNodeInfo']['nodeRowIndex']
+                        else:
+                            st.error('La fila seleccionada no tiene un índice válido.')
+                            idx = None
+
+                        if idx is not None:
+                            self.df.drop(self.df.index[idx], inplace=True)
+                            self.df.reset_index(drop=True, inplace=True)
                     st.session_state['action'] = 'delete'
             elif value is not None and value['action'] == 'save' and self.action_event:
                 st.session_state['action'] = 'save'
@@ -176,9 +182,15 @@ class Setup:
                 if st.session_state['action'] != 'delete' and st.session_state['action'] != 'create':
                     rows = st.session_state['selected_rows']
                     if len(rows) > 0:
-                        idx = rows[0]['_selectedRowNodeInfo']['nodeRowIndex']
-                        self.df.drop(self.df.index[idx], inplace=True)
-                        self.df.reset_index(drop=True, inplace=True)
+                        if '_selectedRowNodeInfo' in rows[0] and 'nodeRowIndex' in rows[0]['_selectedRowNodeInfo']:
+                            idx = rows[0]['_selectedRowNodeInfo']['nodeRowIndex']
+                        else:
+                            st.error('La fila seleccionada no tiene un índice válido.')
+                            idx = None
+
+                        if idx is not None:
+                            self.df.drop(self.df.index[idx], inplace=True)
+                            self.df.reset_index(drop=True, inplace=True)
                     st.session_state['action'] = 'delete'
             elif value is not None and value['action'] == 'save' and self.action_event:
                 st.session_state['action'] = 'save'

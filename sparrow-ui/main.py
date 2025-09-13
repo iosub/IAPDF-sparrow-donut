@@ -83,7 +83,7 @@ def view(model):
                 st.session_state['device_type'] = device_type
                 st.session_state['device_width'] = device_width
 
-                st.experimental_rerun()
+                st.rerun()
         else:
             DataAnnotation().view(DataAnnotation.Model(), st.session_state['ui_width'], st.session_state['device_type'],
                                   st.session_state['device_width'])
@@ -116,7 +116,7 @@ def view(model):
                 st.session_state['device_type'] = device_type
                 st.session_state['device_width'] = device_width
 
-                st.experimental_rerun()
+                st.rerun()
         else:
             DataInference().view(DataInference.Model(), st.session_state['ui_width'], st.session_state['device_type'],
                                  st.session_state['device_width'])
@@ -142,7 +142,7 @@ def view(model):
                 st.session_state['device_type'] = device_type
                 st.session_state['device_width'] = device_width
 
-                st.experimental_rerun()
+                st.rerun()
         else:
             DataReview().view(DataReview.Model(), st.session_state['ui_width'], st.session_state['device_type'],
                               st.session_state['device_width'])
