@@ -7,7 +7,7 @@ huggingface_hub>=0.14.1
 fastapi==0.96.0
 python-doctr==0.6.0
 paddleocr==2.7.0.3
-paddlepaddle==2.5.2
+paddlepaddle
 uvicorn[standard]
 rapidfuzz<3.0
 extract-msg==0.39.2

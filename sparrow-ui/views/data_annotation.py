@@ -407,7 +407,7 @@ class DataAnnotation:
                 words = result_rects.rects_data['words']
                 data = []
                 for i, rect in enumerate(words):
-                    data.append({'id': i, 'value': rect['value']})
+                    data.append({'id': i, 'value': rect['value'], 'label': rect['label']})
                 df = pd.DataFrame(data)
 
                 formatter = {
@@ -455,7 +455,6 @@ class DataAnnotation:
                         x2_max = max([coord['x2'] for coord in coords])
                         y2_max = max([coord['y2'] for coord in coords])
 
-
                         words[rows[0]['id']]['value'] = new_word
                         words[rows[0]['id']]['rect'] = {
                             "x1": x1_min,
@@ -477,7 +476,13 @@ class DataAnnotation:
                         with open(model.rects_file, "w") as f:
                             json.dump(result_rects.rects_data, f, indent=2)
                         st.session_state[model.rects_file] = result_rects.rects_data
-                        st.experimental_rerun()
+                        st.rerun()
+            else:
+                st.info("No annotations available for grouping")
+            
+            # Always include a submit button to avoid Streamlit warning
+            if result_rects is None:
+                st.form_submit_button("Group Annotations", disabled=True)
 
 
     def order_annotations(self, model, labels, groups, result_rects):
@@ -608,7 +613,7 @@ class DataAnnotation:
                         with open(model.rects_file, "w") as f:
                             json.dump(result_rects.rects_data, f, indent=2)
                         st.session_state[model.rects_file] = result_rects.rects_data
-                        st.experimental_rerun()
+                        st.rerun()
             elif str(self.action_event) == 'down':
                 if len(rows) > 0:
                     idx = rows[0]['_selectedRowNodeInfo']['nodeRowIndex']
@@ -631,7 +636,7 @@ class DataAnnotation:
                         with open(model.rects_file, "w") as f:
                             json.dump(result_rects.rects_data, f, indent=2)
                         st.session_state[model.rects_file] = result_rects.rects_data
-                        st.experimental_rerun()
+                        st.rerun()
             elif str(self.action_event) == 'save':
                 data = response['data'].values.tolist()
                 for elem in data:

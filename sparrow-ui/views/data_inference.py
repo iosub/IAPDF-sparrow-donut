@@ -64,7 +64,13 @@ class DataInference:
                         model.set_data_result(None)
 
         if model.get_image_file() is not None:
-            doc_img = Image.open(model.get_image_file())
+            try:
+                doc_img = Image.open(model.get_image_file())
+            except Exception as e:
+                st.error(f"Error opening image file: {e}")
+                model.set_image_file(None)
+                st.rerun()
+                return
             doc_height = doc_img.height
             doc_width = doc_img.width
 
@@ -174,7 +180,7 @@ class DataInference:
             if submit:
                 button_placeholder.empty()
 
-                api_url = "https://katanaml-org-sparrow-ml.hf.space/api-inference/v1/sparrow-ml/inference"
+                api_url = "http://localhost:8001/api-inference/v1/sparrow-ml/inference"
                 file_path = model.get_image_file()
 
                 with open(file_path, "rb") as file:
@@ -193,26 +199,41 @@ class DataInference:
                     }
 
                     with st.spinner("Extracting data from document..."):
-                        response = requests.post(api_url, data=data, files=files, timeout=180)
+                        try:
+                            response = requests.post(api_url, data=data, files=files, timeout=180)
+                        except requests.exceptions.RequestException as e:
+                            st.session_state["inference_error"] = f"Connection error: {e}"
+                            st.rerun()
+                            return
+
                 if response.status_code != 200:
                     print('Request failed with status code:', response.status_code)
                     print('Response:', response.text)
 
-                    st.session_state["inference_error"] = "Error extracting data from document"
+                    st.session_state["inference_error"] = f"API Error {response.status_code}: {response.text}"
                     st.rerun()
+                    return
 
-                model.set_data_result(response.text)
 
-                # Display JSON data in Streamlit
-                st.markdown("---")
-                st.json(response.text)
-
-                # replace file extension to json
-                file_path = file_path.replace(".jpg", ".json")
-                with open(file_path, "w") as f:
-                    json.dump(response.text, f, indent=2)
-
-                st.experimental_rerun()
+                # Parse and display JSON data
+                try:
+                    result_data = response.json()
+                    model.set_data_result(result_data)
+                    
+                    st.markdown("---")
+                    st.json(result_data)
+                    
+                    # Save result to file
+                    file_path_json = file_path.replace(".jpg", ".json").replace(".jpeg", ".json").replace(".png", ".json")
+                    with open(file_path_json, "w") as f:
+                        json.dump(result_data, f, indent=2)
+                        
+                    st.success("Data extracted successfully!")
+                        
+                except json.JSONDecodeError:
+                    st.session_state["inference_error"] = "Invalid response format from API"
+                    st.rerun()
+                    return
             else:
                 if model.get_data_result() is not None:
                     st.markdown("---")

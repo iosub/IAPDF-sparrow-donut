@@ -34,24 +34,38 @@ class Dashboard:
     def view(self, model):
         # st.title(model.pageTitle)
 
-        # Use mock data when APIs are not available
-        json_data_inference = [
-            [2.3, {"accuracy": 0.85, "processing_time": 2.3}, "model_v1", "inference_001", "2023-01-01 10:30:00"],
-            [2.1, {"accuracy": 0.87, "processing_time": 2.1}, "model_v1", "inference_002", "2023-01-02 11:15:00"],
-            [1.9, {"accuracy": 0.89, "processing_time": 1.9}, "model_v2", "inference_003", "2023-01-03 09:45:00"]
-        ]
-        
-        json_data_training = [
-            [45, {"loss": 0.45, "epochs": 10}, "model_v1", "training_001", "2023-01-01 14:20:00"],
-            [42, {"loss": 0.42, "epochs": 12}, "model_v1", "training_002", "2023-01-02 15:30:00"],
-            [38, {"loss": 0.38, "epochs": 15}, "model_v2", "training_003", "2023-01-03 16:10:00"]
-        ]
-        
-        json_data_evaluate = [
-            [85, {"mean_accuracy": 0.85, "accuracies": 0.85}, "model_v1", "evaluate_001", "2023-01-01 12:00:00"],
-            [87, {"mean_accuracy": 0.87, "accuracies": 0.87}, "model_v1", "evaluate_002", "2023-01-02 13:15:00"],
-            [89, {"mean_accuracy": 0.89, "accuracies": 0.89}, "model_v2", "evaluate_003", "2023-01-03 14:30:00"]
-        ]
+        api_url = "http://localhost:8001/api-inference/v1/sparrow-ml/statistics"
+        json_data_inference = []
+        try:
+            response = requests.get(api_url, timeout=5)
+            if response.status_code == 200:
+                json_data_inference = response.json()
+            else:
+                print(f"Error: Unable to fetch data from the API (status code {response.status_code})")
+        except requests.exceptions.RequestException as e:
+            print(f"Error connecting to sparrow-ml API: {e}")
+
+        api_url_t = "http://localhost:8001/api-training/v1/sparrow-ml/statistics/training"
+        json_data_training = []
+        try:
+            response_t = requests.get(api_url_t, timeout=5)
+            if response_t.status_code == 200:
+                json_data_training = response_t.json()
+            else:
+                print(f"Error: Unable to fetch data from the API (status code {response_t.status_code})")
+        except requests.exceptions.RequestException as e:
+            print(f"Error connecting to sparrow-ml API: {e}")
+
+        api_url_e = "http://localhost:8001/api-training/v1/sparrow-ml/statistics/evaluate"
+        json_data_evaluate = []
+        try:
+            response_e = requests.get(api_url_e, timeout=5)
+            if response_e.status_code == 200:
+                json_data_evaluate = response_e.json()
+            else:
+                print(f"Error: Unable to fetch data from the API (status code {response_e.status_code})")
+        except requests.exceptions.RequestException as e:
+            print(f"Error connecting to sparrow-ml API: {e}")
 
         with st.container():
             col1, col2, col3, col4, col5 = st.columns(5)
@@ -292,17 +306,11 @@ class Dashboard:
                 with st.container():
                     st.write(model.titleDatasetInfo)
 
-                    # Use mock data when API is not available
-                    response = type('MockResponse', (), {
-                        'status_code': 200, 
-                        'json': lambda self: {
-                            "splits": [
-                                {"name": "dataset_1", "size": 1500, "type": "training", "number_of_rows": 1500},
-                                {"name": "dataset_2", "size": 800, "type": "validation", "number_of_rows": 800},
-                                {"name": "dataset_3", "size": 300, "type": "test", "number_of_rows": 300}
-                            ]
-                        }
-                    })()
+                    try:
+                        response = requests.get("http://localhost:8000/api-dataset/v1/sparrow-data/dataset_info", timeout=5)
+                    except requests.exceptions.RequestException as e:
+                        print(f"Error connecting to sparrow-data API: {e}")
+                        response = type('MockResponse', (), {'status_code': 500, 'json': lambda self: {}})()
 
                     # Check if the request was successful (status code 200)
                     names = []

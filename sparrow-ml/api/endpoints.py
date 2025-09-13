@@ -4,7 +4,14 @@ from routers import inference, training
 from huggingface_hub import login
 from config import settings
 
-login(settings.huggingface_key)
+# Only login if huggingface_key is provided
+if settings.huggingface_key:
+    try:
+        login(settings.huggingface_key)
+    except Exception as e:
+        print(f"Warning: Hugging Face login failed: {e}")
+else:
+    print("Warning: No Hugging Face key provided, some features may not work")
 
 app = FastAPI(openapi_url="/api/v1/sparrow-ml/openapi.json", docs_url="/api/v1/sparrow-ml/docs")
 

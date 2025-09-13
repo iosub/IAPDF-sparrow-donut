@@ -12,7 +12,14 @@ from huggingface_hub import login
 
 router = APIRouter()
 
-login(settings.huggingface_key)
+# Only login if huggingface_key is provided
+if settings.huggingface_key:
+    try:
+        login(settings.huggingface_key)
+    except Exception as e:
+        print(f"Warning: Hugging Face login failed: {e}")
+else:
+    print("Warning: No Hugging Face key provided, some features may not work")
 
 class ImageResponse(BaseModel):
     image_data: str

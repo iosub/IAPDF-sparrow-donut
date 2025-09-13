@@ -161,3 +161,6 @@ cython_debug/
 .DS_Store
 
 sparrow-ui/.env_sparrow_ui/
+sparrow-ui/docs/images/
+sparrow-ui/docs/inference/
+sparrow-ui/docs/json/

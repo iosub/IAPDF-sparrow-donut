@@ -9,3 +9,5 @@ donut-python
 fastapi==0.96.0
 uvicorn[standard]
 python-multipart
+hf_xet
+huggingface_hub[hf_xet]
