@@ -248,25 +248,37 @@ class Dashboard:
             with col1:
                 st.write(model.titleInferencePerformance)
 
-                models_dict = {}
+                if len(json_data_inference) > 0:
+                    models_dict = {}
 
-                models = []
-                for i in range(0, len(json_data_inference)):
-                    models.append(json_data_inference[i][3])
+                    models = []
+                    for i in range(0, len(json_data_inference)):
+                        models.append(json_data_inference[i][3])
 
-                models_unique = []
-                for item in models:
-                    if item not in models_unique:
-                        models_unique.append(item)
+                    models_unique = []
+                    for item in models:
+                        if item not in models_unique:
+                            models_unique.append(item)
 
-                for i, key in enumerate(models_unique):
-                    models_dict[key] = []
+                    for i, key in enumerate(models_unique):
+                        models_dict[key] = []
 
-                for i in range(0, len(json_data_inference)):
-                    models_dict[json_data_inference[i][3]].append(round(json_data_inference[i][0]))
+                    for i in range(0, len(json_data_inference)):
+                        models_dict[json_data_inference[i][3]].append(round(json_data_inference[i][0]))
 
-                data = pd.DataFrame(models_dict)
-                st.line_chart(data)
+                    # Ensure all arrays have the same length by padding with None
+                    max_length = max(len(values) for values in models_dict.values()) if models_dict else 0
+                    for key in models_dict:
+                        while len(models_dict[key]) < max_length:
+                            models_dict[key].append(None)
+
+                    if max_length > 0:
+                        data = pd.DataFrame(models_dict)
+                        st.line_chart(data)
+                    else:
+                        st.info("No inference data available yet")
+                else:
+                    st.info("No inference data available yet")
 
             with col2:
                 st.write(model.titleModelEval)

@@ -56,13 +56,17 @@ class DataReview:
             selection_index = self.get_selection_index(selection, processed_file_names)
             st.session_state['selection_index'] = selection_index
 
+        if selection == "No files available":
+            st.title(model.initial_msg)
+            return
+            
         img_file = "docs/inference/" + selection + ".jpg"
         json_file = "docs/inference/" + selection + ".json"
 
         model.set_image_file(img_file)
         model.set_json_file(json_file)
 
-        if model.get_image_file() is not None:
+        if model.get_image_file() is not None and os.path.exists(model.get_image_file()):
             doc_img = Image.open(model.get_image_file())
             doc_height = doc_img.height
             doc_width = doc_img.width
@@ -88,9 +92,16 @@ class DataReview:
 
     def get_processed_file_names(self, dir_name):
         # get ordered list of files without file extension, excluding hidden files, with JSON extension only
+        if not os.path.exists(dir_name):
+            return ["No files available"]
+        
         file_names = [os.path.splitext(f)[0] for f in os.listdir(dir_name) if
                         os.path.isfile(os.path.join(dir_name, f)) and not f.startswith('.') and f.endswith('.json')]
         file_names = natsorted(file_names)
+        
+        if not file_names:
+            return ["No files available"]
+        
         return file_names
 
     def get_selection_index(self, file, files_list):

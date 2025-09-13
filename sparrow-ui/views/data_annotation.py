@@ -238,7 +238,7 @@ class DataAnnotation:
     def render_form(self, model, result_rects, data_processor, annotation_selection):
         with st.container():
             if result_rects is not None:
-                with st.form(key="fields_form"):
+                with st.form(key="annotation_fields_form"):
                     toolbar = st.empty()
 
                     self.render_form_view(result_rects.rects_data['words'], model.labels, result_rects,
